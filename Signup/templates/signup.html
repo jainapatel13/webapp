@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Signup</title>
+</head>
+<body>
+<h1>Signup</h1>
+<form method="post" action="/login/">
+    {% csrf_token %}
+    <div>
+
+        <label>Username</label>
+        <input type="text" name="username" placeholder="Username"/>
+
+        <label for="InputPassword1">Password</label>
+        <input type="password" name="password1" placeholder="Password"/>
+
+        <label for="InputPassword2">Verify Password</label>
+        <input type="password" name="password2" placeholder="Verify Password"/>
+
+        <label for="InputFirstName"><b>First Name</b></label>
+        <input type="text" name="FirstName" placeholder="First Name"/>
+
+
+        <label for="InputFirstName"><b>Last Name</b></label>
+        <input type="text" name="LastName" placeholder="Last Name"/>
+
+        <label for="InputEmail1">Email address</label>
+        <input type="email" name="Email" placeholder="Email"/>
+
+        <button type="submit"> SUBMIT</button>
+
+</div>
+</form>
+
+</body>
+</html>
